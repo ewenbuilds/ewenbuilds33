@@ -1,0 +1,6 @@
+{
+  "name": "EWENBUILDS.xyz",
+  "description": "Professional engineering portfolio and open-source hardware repository featuring CAD models, BOM docs, and interactive 3D viewers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

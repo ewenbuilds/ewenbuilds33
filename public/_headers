@@ -1,0 +1,23 @@
+# Cloudflare Pages Security & Cache Headers for EWENBUILDS.xyz
+# Static site deployment: SPA routing is handled automatically by Cloudflare Pages.
+# DO NOT add a _redirects file, which conflicts with native SPA routing.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Cache static assets efficiently
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache 3D models and downloads
+/models/*
+  Cache-Control: public, max-age=86400
+
+/downloads/*
+  Cache-Control: public, max-age=86400
+
+/docs/*
+  Cache-Control: public, max-age=86400
